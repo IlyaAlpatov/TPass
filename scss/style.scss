@@ -856,6 +856,16 @@ a {
     transition: ease margin .5s;
 }
 
+.footer__nav__col {
+    margin-right: 80px;    
+}
+
+@supports (gap: 80px) {
+    .footer__nav__col {
+        margin-right: 0;    
+    }
+}
+
 .footer__nav__title {
     @include textStyle(bold, 12px, 20px, $colorBlue);
     letter-spacing: 0.1px;
@@ -894,6 +904,16 @@ a {
     .footer__nav {
         margin-right: 0;
         gap: 30px;
+    }
+
+    .footer__nav__col {
+        margin-right: 30px; 
+    }
+
+    @supports (gap: 30px) {
+        .footer__nav__col {
+            margin-right: 0;    
+        }
     }
 
     .footer__logo {
